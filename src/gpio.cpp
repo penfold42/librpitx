@@ -97,7 +97,7 @@ uint32_t gpio::GetPeripheralBase()
 	dbg_printf(1,"Peri Base = %x SDRAM %x\n",/*get_hwbase()*/bcm_host_get_peripheral_address(),bcm_host_get_sdram_address());
 	if(BCM2708_PERI_BASE==0xFE000000) // Fixme , could be inspect without this hardcoded value
 	{
-               dbg_printf(0,"RPi4 GPIO detected\n");
+               dbg_printf(1,"RPi4 GPIO detected\n");
 		pi_is_2711=true;  //Rpi4
 		XOSC_FREQUENCY=54000000;
 	}
